@@ -10,7 +10,7 @@
 
 ## What I have learned so far
 
-Even though I know I will not make requirements at least by the first due date, I have learned a lot. When it comes to learning new technical skills I grasp the concepts a bit slow. I have to remind myself to slow down and read through the problem and eventually I will comprehend. 
+Even though I know I will not make requirements at least by the first due date, I have learned a lot. When it comes to learning new technical skills I grasp the concepts a bit slow. I have to remind myself to slow down and read through the problem and eventually I will comprehend.
 
 ## Unsolved Problems
 
