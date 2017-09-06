@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Alicia's Tic-Tac-Toe Game</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body class="container-fluid">
+      <h1>Alicia's Tic-Tac-Toe Game</h1>
+<!-- begin auth stuff -->
+      <div class="auth-wrapper">
+        <p id='message'></p>
+          <form id="sign-up">
+            <fieldset>
+              <h4>Sign up!</h4>
+              <input type="text" name="credentials[email]" placeholder="Email">
+              <input type="password" name="credentials[password]" placeholder="Password">
+              <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation">
+              <input type="submit" name="submit" value="Sign up!">
+            </fieldset>
+          </form>
+
+          <form id="sign-in">
+            <fieldset>
+              <h4>Sign in!</h4>
+              <input type="text" name="credentials[email]" placeholder="Email">
+              <input type="password" name="credentials[password]" placeholder="Password">
+              <input type="submit" name="submit" value="Sign in!">
+            </fieldset>
+          </form>
+
+          <form id="change-password">
+            <fieldset>
+              <h4>Change password!</h4>
+              <input type="text" name="passwords[old]" placeholder="Old password">
+              <input type="password" name="passwords[new]" placeholder="New password">
+              <input type="submit" name="submit" value="Change password!">
+            </fieldset>
+          </form>
+
+          <form id="sign-out">
+            <fieldset>
+              <h4>Sign out!</h4>
+              <input type="submit" name="submit" value="Sign out!">
+            </fieldset>
+          </form>
+      </div>
+
+<!-- begin game stuff -->
+
+      <!-- Score board -->
+    <div class="scoreboard_wrapper">
+        <div class="score div-1">
+          <p class="player_1">Player X</p>
+          <div id="player_x" class="score_box"></div>
+        </div>
+        <div class="score div-2">
+          <p class="player_2">Player O</p>
+          <div id="player_o" class="score_box"></div>
+        </div>
+        <div class="score div-3">
+          <p class="tie-games">Tie Games</p>
+          <div id="tie" class="score_box"></div>
+        </div>
+    </div>
+
+      <!-- Game board -->
+      <div class="game-board">
+        <p id='game-message'></p>
+        <div class="row">
+          <div id="cell0" class="col-sm-3 col-md-8 box"></div>
+          <div id="cell1" class="col-sm-3 col-md-8 box"></div>
+          <div id="cell2" class="col-sm-3 col-md-8 box"></div>
+        </div>
+
+        <div class="row">
+          <div id="cell3" class="col-sm-3 col-md-8 box"></div>
+          <div id="cell4" class="col-sm-3 col-md-8 box"></div>
+          <div id="cell5" class="col-sm-3 col-md-8 box"></div>
+        </div>
+
+        <div class="row">
+          <div id="cell6" class="col-sm-3 col-md-8 box"></div>
+          <div id="cell7" class="col-sm-3 col-md-8 box"></div>
+          <div id="cell8" class="col-sm-3 col-md-8 box"></div>
+        </div>
+      </div>
+
+      <!-- New game and reset score buttons -->
+
+      <div class="buttons">
+        <button class="newGame">New Game</button>
+        <button class="resetScore">Reset Score</button>
+      </div>
+      <footer>
+        <p>Made by <a href="https://github.com/aliciapflaumer/">Alicia Pflaumer</a></p>
+      </footer>
+    </body>
+</html>
